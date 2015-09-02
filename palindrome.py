@@ -1,15 +1,18 @@
+import re
+
 def main():
     sentence = input("What is your sentence?\n")
-    sentence1 = sentence.strip('?.!,').lower().replace(' ','')
-    return sentence1
+    return sentence
 
-def is_palindrome():
-    string = main()
-    reverse = string[::-1]
-    if reverse == string:
-        return print("palindrome")
+def is_palindrome(sentence):
+    stripped = re.sub(r'[^A-Za-z]','', sentence).lower()
+    reverse = stripped[::-1]
+    if reverse == stripped:
+        return True
     else:
-        return print("Not")
+        return False
 
+if __name__ == '__main__':
+    main()
 
-is_palindrome()
+#is_palindrome()
