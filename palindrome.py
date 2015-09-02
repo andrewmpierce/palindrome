@@ -13,7 +13,7 @@ def is_palindrome(sentence):
     else: return False
 
 if __name__ == '__main__':
-    is_palindrome(main())
+    print(is_palindrome(main()))
 
 #reverse = stripped[::-1]
 #if reverse == stripped:
