@@ -1,6 +1,6 @@
 import unittest
 
-from palindrome import is_palindrome
+from palindrome_hard import is_palindrome
 
 class TestPalindrome(unittest.TestCase):
     def test_even_numbers(self):

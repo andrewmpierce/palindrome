@@ -1,3 +1,4 @@
+#test is pointed to palindrome_hard.py
 import re
 
 def main():
